@@ -541,9 +541,9 @@ a.button small {
 /* } */
 
 header a.su {
-  position: fixed;
-  width: 200px;
-  height: 200px;
+  position: absolute;
+  width: 160px;
+  height: 160px;
   padding-left: 160px;
   padding-top: 20px;
   padding-bottom: 20px;
