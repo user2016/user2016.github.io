@@ -182,7 +182,8 @@ sub {
  */
 
 img {
-  border: 0;
+    border: 0;
+    display: block;
 }
 
 /**
@@ -560,7 +561,7 @@ a.useR {
 #watermark {
    opacity: 0.2;
    color: BLACK;
-   position: fixed;
+   position: auto;
    top: auto;
 /*   left: 80%; */
 }
