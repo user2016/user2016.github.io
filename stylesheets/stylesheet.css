@@ -183,7 +183,6 @@ sub {
 
 img {
     border: 0;
-    display: block;
 }
 
 /**
@@ -449,8 +448,8 @@ a:hover {
 }
 
 header {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
   background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
   border-bottom: solid 1px #275da1;
@@ -542,13 +541,15 @@ a.button small {
 /* } */
 
 header a.su {
-  position: absolute;
+  position: fixed;
   width: 200px;
   height: 200px;
   padding-left: 160px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   top: 0;
   right: 0;
-  background: transparent url(../images/su2.jpg) 0 0 no-repeat;
+  background: transparent url(../images/su3.jpg) 0 0 no-repeat;
 }
 
 a.useR {
