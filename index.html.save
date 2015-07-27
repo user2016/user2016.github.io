@@ -18,11 +18,11 @@
 
   <body>
     <header>
-      <div class="subhead">
-	<div class="inner">
-          <h1>useR! 2016</h1>
-          <h2>R Users Conference, June 27-30, 2016</h2>
-	</div>
+      <div class="inner">
+        <h1>useR! 2016</h1>
+        <h2>R Users Conference, June 27-30, 2016</h2>
+      </div>
+        <a href="https://www.stanford.edu" class="su"></a>
       </div>
     </header>
 
@@ -33,23 +33,22 @@
 <a id="user-2016-conference-at-stanford-university-california-usa" class="anchor" href="#user-2016-conference-at-stanford-university-california-usa" aria-hidden="true"><span class="octicon octicon-link"></span></a>useR! 2016 Conference at Stanford University, California, USA</h3>
 
 <p>While useR! 2016 is still some time away, the work behind the
-  scenes is underway. Do check back periodically. </p>
+  scenes has already begun. Do check back periodically. </p>
 
 	  <p>Thank you for visiting!</p>
 
-	  <p>
-	    <pre id="watermark">
-	      <small>
-		library(leaflet)
-		leaflet() %&gt;%
-		  addTiles() %&gt;%
-		    addMarkers(lat = 37.429850, lng = -122.169462,
-                               popup="Leland Stanford Junior University") %&gt;%
-		      addMarkers(lat = 37.430758, lng = -122.164853,
-                                 popup="useR! 2016 HQ, June 27-30, 2016")
+	  <p><pre id="watermark">
 	      </small>
-	    </pre>
-	  </p>
+library(leaflet)
+leaflet() %&gt;%
+       addTiles() %&gt;%
+          addMarkers(lat = 37.429850, lng = -122.169462,
+                     popup="Leland Stanford Junior University") %&gt;%
+             addMarkers(lat = 37.430940, lng = -122.164639,
+                        popup="useR! 2016 HQ, June 27-30, 2016")
+</small>
+</pre>
+
         </section>
 
         <aside id="sidebar">
