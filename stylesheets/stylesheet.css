@@ -571,7 +571,7 @@ a.useR {
 
 #watermark {
   background: url(../images/map.png);
-  background-position: center;
+  /* background-position: center; */
   background-repeat: no-repeat;
   background-size: auto 100%;
   opacity: 0.5;
@@ -604,11 +604,11 @@ code {
 }
 
 pre {
-  padding: 20px;
-  overflow: auto;
-  text-shadow: none;
-  background: #fff;
-  border: solid 1px #f2f2f2;
+    padding: 0px;
+    overflow: auto;
+    text-shadow: none;
+    background: #fff;
+    border: solid 1px #f2f2f2;
 }
 pre code {
   padding: 0;
