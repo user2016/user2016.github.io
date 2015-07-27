@@ -453,7 +453,7 @@ header {
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
   /* background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x; */
   /* background: transparent url(../images/header-bg.jpg) 0 0 repeat-x; */
-  border-bottom: solid 1px #275da1;
+  /* border-bottom: solid 1px #275da1; */
 }
 
 
@@ -474,6 +474,7 @@ header h2 {
   width: 540px;
   margin-top: 0;
   margin-bottom: 0;
+  padding-bottom: 10px;
   font-size: 26px;
   font-weight: normal;
   line-height: 1.3;
