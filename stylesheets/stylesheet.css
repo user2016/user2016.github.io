@@ -458,8 +458,8 @@ header {
 
 
 header h1 {
-    padding-top: 20px;
-    padding-bottom: 0px;
+    padding-top: 70px;
+    padding-bottom: 30px;
     width: 540px;
     margin-top: 0;
     margin-bottom: 0.2em;
@@ -474,7 +474,7 @@ header h2 {
   width: 540px;
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 10px;
+  padding-bottom: 70px;
   font-size: 26px;
   font-weight: normal;
   line-height: 1.3;
