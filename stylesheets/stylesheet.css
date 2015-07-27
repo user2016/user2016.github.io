@@ -458,8 +458,8 @@ header {
 
 
 header h1 {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 0px;
     width: 540px;
     margin-top: 0;
     margin-bottom: 0.2em;
@@ -875,7 +875,7 @@ footer a:hover {
     width: 93%;
   }
   header {
-    padding: 20px 0;
+    padding: 0 0;
   }
   header .inner {
     position: relative;
