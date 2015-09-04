@@ -1,90 +1,338 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+<head>
+    <meta content="http://user2016.github.io/images/useR-middle.png">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="UTF-8">
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <title>useR! 2016 Stanford, CA</title>
+    <!-- for social media preview stuff -->
+    <link href="images/useR-large.png" rel="image_src">
+    <meta content=
+    "The annual useR! international R User conference is the main meeting of the R user and developer community. In 2016, the conference will be held at the campus of Stanford University, Stanford, CA."
+    name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link href="bootstrap/css/bootstrap.min.css" media="screen" rel=
+    "stylesheet">
+    <link href="bootstrap/css/bootstrap-responsive.min.css" media="screen" rel=
+    "stylesheet">
+    <link href="user.css" media="screen" rel="stylesheet">
+    <!-- code to make the TalkTable sortable using http://tablesorter.com/docs/ -->
+    <!-- <script type="text/javascript" src="tablesorter/jquery-latest.js"></script> -->
+    <!-- <script type="text/javascript" src="tablesorter/jquery.tablesorter.js"></script> -->
+    <!-- <script type="text/javascript"> -->
+    <!-- $(document).ready(function() -->
+    <!--     { -->
+    <!--         $("#TalkTable").tablesorter(); -->
+    <!--     } -->
+    <!-- ); -->
+    <!-- </script> -->
+</head>
 
-    <title>useR! 2016 Conference at Stanford, California</title>
-  </head>
+<body data-offset="50" data-spy="scroll" data-target=".sidebar">
+    <div id="wrap">
+        <header class="subhead" id="topheader">
+            <div class="container">
+                <h1>The R User Conference 2016</h1>
 
-  <body>
-    <header>
-      <div class="subhead">
-	<div class="inner">
-          <h1>useR! 2016</h1>
-          <h2>R Users Conference, June 27-30, 2016</h2>
-	</div>
-      </div>
-    </header>
+                <p class="lead">June 27 - July 1 2016<br>
+                Stanford University, Stanford, California</p>
+            </div>
+        </header>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h3>
-	    <a id="user-2016-conference-at-stanford-university-california-usa" class="anchor" href="#user-2016-conference-at-stanford-university-california-usa" aria-hidden="true"><span class="octicon octicon-link"></span></a>useR! 2016 Conference at Stanford University, California, USA</h3>
+        <div class="container">
+            <div class="row">
+                <div class="span3 sidebar">
+                    <div id="logodiv">
+                        <img alt="logo" src="images/useR-middle.png"><br>
+                        <br>
+                    </div>
 
-	  <p>While useR! 2016 is still some time away, the work behind the
-	    scenes is underway. Do check back periodically. </p>
+                    <div class="affixdiv" data-clampedwidth=".sidebar"
+                    data-offset-top="400" data-spy="affix">
+                        <div class="well" style="padding: 8px 0;">
+                            <ul class="nav nav-list usermenu">
+                                <li class="nav-header">Conference</li>
 
-	  <p>Thank you for visiting!</p>
+                                <li>
+                                    <a href="#about"><i class=
+                                    "icon-info-sign"></i> About the
+                                    Conference</a>
+                                </li>
+<!-- 
+                                <li>
+                                    <a href="#sponsors"><i class=
+                                    "icon-star"></i> Sponsors</a>
+                                </li>
+ -->
+                                <li>
+                                    <a href="#dates"><i class=
+                                    "icon-calendar"></i> Important Dates</a>
+                                </li>
 
-	  <p>
-	    <pre id="watermark">
-	      <small>
-library(leaflet)
-leaflet() %&gt;%
-  addTiles() %&gt;%
-    addMarkers(lat = 37.429850, lng = -122.169462,
-               popup="Stanford University") %&gt;%
-      addMarkers(lat = 37.430758, lng = -122.164853,
-                 popup="useR! 2016 HQ, June 27-30, 2016")
-	      </small>
-	    </pre>
-	  </p>
-	  <p>
-	    Sponsored in part
-	    by <a href="https://statistics.stanford.edu">Department of
-	      Statistics, Stanford University</a>.
-	  </p>
+                                <li>
+                                    <a href="#registration"><i class=
+                                    "icon-th-list"></i> Registration</a>
+                                </li><!-- <li class="divider"></li>
+                                <li class="nav-header">Program</li>
+                                <li><a href="#invited"><i class="icon-th-large"></i> Invited Talks</a></li>
+                                <li><a href="#tutorials"><i class="icon-th"></i> Tutorials</a></li>
+                                <li><a href="#schedule"><i class=" icon-list"></i> Schedule</a></li>
+                                <ul>
+                                    <li><a href="#Rooms"><i class = "icon-calendar"></i>Session overview (rooms)</a></li>
+                                    <li><a href="#Tuesday"><i class= "icon-th-large"></i>Tuesday contributed talks</a></li>
+                                    <li><a href="#Wednesday"><i class= "icon-th-large"></i>Wednesday contributed talks</a></li>
+                                    <li><a href="#Thursday"><i class= "icon-th-large"></i>Thursday contributed talks</a></li>
+                                    <li><a href="#poster-schedule"><i class= "icon-th"></i>Posters</a></li>
 
-	  <p>
-	    For sponsorship questions, please contact <a href="https://statistics.stanford.edu/people/balasubramanian-narasimhan">Balasubramanian Narasimhan</a>.
-	  </p>
-	  
-        </section>
+                                </ul>
+                                <li><a href="#social"><i class="icon-music"></i> Social Program</a></li>
+                                <li><a href="#abstractbook"><i class="icon-folder-open"></i> Abstract Book</a></li>
+                                <li><a href="#datacompetition"><i class="icon-signal"></i> OECD Data Contest</a></li> -->
+                                <!-- <li class="divider"></li>
+                                <li class="nav-header">Location</li>
+                                <li><a href="#map"><i class="icon-map-marker"></i> Map</a></li>
+                                <li><a href="#stanford"><i class="icon-picture"></i> Stanford Campus</a></li>
+                                <li><a href="#lodging"><i class="icon-home"></i> Lodging</a></li>
+                                <li><a href="#travel"><i class=" icon-plane"></i> Travel Information</a></li>
+                                <li class="divider"></li>
+                                <li class="nav-header">Information for Presenters</li>
+                                <li><a href="#talks"><i class="icon-th-large"></i>Talks</a></li>
+                                <li><a href="#posters"><i class="icon-th-large"></i>Posters</a></li> -->
+                                <!--<li><a href="#accommodation"><i class="icon-info-sign"></i> Accommodation</a></li>-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-        <aside id="sidebar">
-	  Organizing Committee
-	  
-	  <ul>
-	    <li><a href="https://statistics.stanford.edu/people/john-chambers">John Chambers</a>, Stanford
-	    <li><a href="http://www.stat.berkeley.edu/~sandrine/">Sandrine Dudoit</a>, UC Berkeley
-	    <li><a href="https://statistics.stanford.edu/people/trevor-j-hastie">Trevor Hastie</a>, Stanford
-	    <li><a href="https://statistics.stanford.edu/people/susan-holmes">Susan Holmes</a>, Stanford
-	    <li><a href="https://politicalscience.stanford.edu/people/simon-d-jackman">Simon Jackman</a>, Stanford
-	    <li>Olivia Lau, Google Inc.
-	    <li>Nicholas Lewin-Koh, Genentech Inc.
-	    <li><a href="http://faculty.engineering.ucdavis.edu/matloff/">Norman Matloff</a>, UC Davis
-	    <li><a href="https://statistics.stanford.edu/people/balasubramanian-narasimhan">Balasubramanian Narasimhan</a>, Stanford
-            <li><a href="http://karthik.io/">Karthik Ram</a>, UC Berkeley
-	    <li>Joseph Rickert, Microsoft Corp.
-            <li><a href="http://www.stat.ucdavis.edu/~duncan/">Duncan Temple Lang</a>, UC Davis
-	  </ul>
+                <div class="span9 content">
+                    <section id="about">
+                        <div class="page-header">
+                            <h1>About the Conference</h1>
+                        </div>
 
-	  <a href="https://www.r-project.org/conferences.html"><img src="images/useR.png"></a>
-        </aside>
-      </div>
+                        <p>The annual <a href=
+                        "http://www.r-project.org/conferences.html">useR!</a>
+                        international R User conference is the main meeting of
+                        the <a href="http://www.r-project.org/">R</a> user and
+                        developer community. Its program consists of both
+                        invited and user-contributed presentations:</p>
+
+                        <ul>
+                            <li>The invited keynote lectures cover a broad
+                            spectrum of topics ranging from technical and
+                            R-related computing issues to general statistical
+                            topics of current interest.</li>
+
+                            <li>The user-contributed presentations are
+                            submitted as abstracts prior to the conference and
+                            may be related to (virtually) any R-related topic.
+                            The presentations are typically organized in
+                            sessions of either broad or special interest, which
+                            also comprise a "free" discussion format. Such a
+                            discussion format not only provides a forum for
+                            software demonstrations and detailed discussions
+                            but also supports the self-organization of the
+                            respective communities.</li>
+                        </ul>
+
+                        <p>In 2016, the conference will be held at the campus
+                        of Stanford University in Stanford, CA (<a href=
+                        "http://www.stanford.edu/">Stanford</a>). The
+                        conference is being organized with support from the
+                        <a href="https://statistics.stanford.edu/">Department
+                        of Statistics, Stanford University</a>.</p>
+
+                        <p>
+                       The program will cover topics such as
+						<ul>	
+					     <li>History of R and computing with data</li>
+					     <li>Bayesian Statistics</li>
+					     <li>Bioinformatics</li>
+					     <li>Economics, Finance and Insurance</li>
+					     <li>High Performance Computing</li>
+					     <li>Industrial Applications</li>
+					     <li>Statistical Learning with Big Data</li>
+					     <li>Spatial Statistics</li>
+					     <li>Teaching</li>
+					     <li>Visualization & Graphics</li>
+					     <li>and many more.</li>
+					     </ul>
+                        </p>
+
+                        <h2>Organizing committee</h2>
+
+                        <ul>
+                            <li>
+                                <a href=
+                                "https://statistics.stanford.edu/people/john-chambers">
+                                John Chambers</a>, Stanford University
+                            </li>
+
+                            <li>
+                                <a href=
+                                "http://www.stat.berkeley.edu/~sandrine/">Sandrine
+                                Dudoit</a>, University of California, Berkeley
+                            </li>
+
+                            <li>
+                                <a href=
+                                "https://statistics.stanford.edu/people/trevor-j-hastie">
+                                Trevor Hastie</a>, Stanford
+                            </li>
+
+                            <li>
+                                <a href=
+                                "https://statistics.stanford.edu/people/susan-holmes">
+                                Susan Holmes</a>, Stanford
+                            </li>
+
+                            <li>
+                                <a href=
+                                "https://politicalscience.stanford.edu/people/simon-d-jackman">
+                                Simon Jackman</a>, Stanford
+                            </li>
+
+                            <li>Olivia Lau, Google Inc.</li>
+
+                            <li>Nicholas Lewin-Koh, Genentech Inc.</li>
+
+                            <li>
+                                <a href=
+                                "http://faculty.engineering.ucdavis.edu/matloff/">
+                                Norman Matloff</a>, UC Davis
+                            </li>
+
+                            <li>
+                                <a href=
+                                "https://statistics.stanford.edu/people/balasubramanian-narasimhan">
+                                Balasubramanian Narasimhan</a>, Stanford University
+                            </li>
+
+                            <li>
+                                <a href="http://karthik.io/">Karthik Ram</a>,
+                                University of California, Berkeley
+                            </li>
+
+                            <li>Joseph Rickert, Microsoft Corp.</li>
+
+                            <li>
+                                <a href=
+                                "http://www.stat.ucdavis.edu/~duncan/">Duncan
+                                Temple Lang</a>, UC Davis
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section id="dates">
+                        <div class="page-header">
+                            <h1>Important Dates</h1>
+                        </div>
+
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Event</th>
+
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Tutorial Submissions Deadline</td>
+
+                                    <td>January 3, 2016</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Abstract Submissions Deadline</td>
+
+                                    <td>March 3, 2016</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Notification of Acceptance</td>
+
+                                    <td>March 28, 2016</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Early Registration Deadline</td>
+
+                                    <td>March 1, 2016</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Registration Deadline</td>
+
+                                    <td>June 1, 2016</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Late registration deadline
+                                    (closed!)</td>
+
+                                    <td>June 20, 2016</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Tutorials</td>
+
+                                    <td>June 27, 2016</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Conference Start</td>
+
+                                    <td>June 28, 2016</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Conference End</td>
+
+                                    <td>June 30, 2016</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+
+                    <section id="registration">
+                        <div class="page-header">
+                            <h1>Registration</h1>
+                        </div>
+
+                        <p style="font-weight: bold">Registration is not yet
+                        open</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div id="emptyness"></div><!-- twitter modal -->
+
+        <div class="modal fade hide" id="twittermodal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <a class="twitter-timeline" data-widget-id=
+                    "481885930052016080" href=
+                    "https://twitter.com/hashtag/user2016">#user2016 Tweets</a>
+                </div>
+            </div>
+        </div>
     </div>
 
-
-  </body>
+    <div id="footer">
+        <div class="container">
+            <p class="muted credit">For questions and sponsorship details
+            please contact Balasubramanian Narasimhan [naras AT
+            stat.stanford.edu].<br>
+            Design adapted from <a href="https://jeroenooms.github.io/">Jereon
+            Ooms</a>.</p>
+        </div>
+    </div><script src="jquery/jquery-1.10.1.min.js"></script> <script src="bootstrap/js/bootstrap.min.js"></script> <script src="user.js"></script> <script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
+</body>
 </html>
