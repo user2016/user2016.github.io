@@ -1,0 +1,64 @@
+---
+title: "useR! 2016 Tutorial Proposal"
+output:
+  pdf_document:
+    keep_tex: true
+    latex_engine: pdflatex
+  theme: cerulean
+  toc: yes
+  toc_depth: 2
+---
+
+_Please fill out the sections. In your final document be sure to
+remove instructive comments such as this one._
+
+## Tutorial Title
+
+_The title for the tutorial._
+
+## Instructor Details
+
+|             |                                                       |
+|-------------|-------------------------------------------------------|
+|Name:        |                                                       |
+|             |                                                       |
+|Institution: |                                                       |
+|             |                                                       |
+|Address:     |                                                       |
+|             |                                                       |
+|Email:       |                                                       |
+
+
+## Short Instructor Biography
+
+_The bio should enable the scientific committee to gauge the
+instructor's qualifications for the tutorial. Links to works previous
+tutorials and/or relevant publications may be included._
+
+## Brief Description of Tutorial
+
+_Describe the tutorial briefly._
+
+## Goals
+
+1. _First goal_
+2. _Second goal_
+3. _Etc., numbered as shown_
+
+## Detailed Outline
+
+_Detailed outline text._
+
+## Justification
+
+_Justification why tutorial is current and important._
+
+## Background Knowledge
+
+_Background knowledge required of attendees._
+
+## Expected Number of Attendees
+
+_How many do you expect to attend the tutorial?_
+
+
