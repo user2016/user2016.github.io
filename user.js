@@ -4,7 +4,7 @@ $(document).ready(function() {
 		$(".usermenu li.active a i").addClass("icon-white")
 	});
 
-	//fancy scrolling animation	
+	//fancy scrolling animation
 	$('.usermenu li a').on('click', function(e) {
 	   // prevent default anchor click behavior
 	   e.preventDefault();
@@ -20,7 +20,7 @@ $(document).ready(function() {
 	       // (default click behaviour)
 	       window.location.hash = hash;
 	     });
-	});	
+	});
 
 	//see https://github.com/twitter/bootstrap/issues/6350
 	$('[data-clampedwidth]').each(function () {
@@ -33,7 +33,7 @@ $(document).ready(function() {
 
 		resizeFn();
 		$(window).resize(resizeFn);
-	});	
+	});
 
 	$("#modallink").click(function(e){
 		if(window.innerWidth > 768) {
@@ -41,5 +41,21 @@ $(document).ready(function() {
 			$('#twittermodal').modal('toggle');
 			return false;
 		}
+	});
+
+	function refreshScrollSpy() {
+	    $('[data-spy="scroll"]').each(function () {
+	        $(this).scrollspy('refresh');
+	    });
+	};
+
+	$(document).on('show', '.accordion', function (e) {
+	    $(e.target).prev('.accordion-heading').addClass('accordion-opened');
+	    setTimeout(function () { refreshScrollSpy(); }, 1000);
+	});
+
+	$(document).on('hide', '.accordion', function (e) {
+	    $(this).find('.accordion-heading').not($(e.target)).removeClass('accordion-opened');
+	    setTimeout(function () { refreshScrollSpy(); }, 1000);
 	});
 });
