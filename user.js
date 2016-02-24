@@ -5,7 +5,7 @@ $(document).ready(function() {
 	});
 
 	//fancy scrolling animation
-	$('.usermenu li a').on('click', function(e) {
+	$('.usermenu li a ').not('.no-section').on('click', function (e) {
 	   // prevent default anchor click behavior
 	   e.preventDefault();
 
