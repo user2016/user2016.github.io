@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta content="http://user2016.github.io/images/useR-middle.png">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="UTF-8">
+
+    <title>useR! 2016 Stanford, CA</title>
+    <!-- for social media preview stuff -->
+    <link href="images/useR-large.png" rel="image_src">
+    <meta content="The annual useR! international R User conference is the main meeting of the R user and developer community. In 2016, the conference will be held at the campus of Stanford University, Stanford, CA."
+          name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link href="../bootstrap/css/bootstrap.min.css" media="screen" rel="stylesheet">
+    <link href="../bootstrap/css/bootstrap-responsive.min.css" media="screen" rel="stylesheet">
+    <link href="../user.css" media="screen" rel="stylesheet">
+    <!-- code to make the TalkTable sortable using http://tablesorter.com/docs/ -->
+    <!-- <script type="text/javascript" src="tablesorter/jquery-latest.js"></script> -->
+    <!-- <script type="text/javascript" src="tablesorter/jquery.tablesorter.js"></script> -->
+    <!-- <script type="text/javascript"> -->
+    <!-- $(document).ready(function() -->
+    <!--     { -->
+    <!--         $("#TalkTable").tablesorter(); -->
+    <!--     } -->
+    <!-- ); -->
+    <!-- </script> -->
+    <style type="text/css">
+        @import url('http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
+
+        .accordion-toggle:after {
+            font-family: 'FontAwesome';
+            content: "\f078";
+            float: right;
+            position: relative;
+            margin-top: 1%;
+        }
+
+        .accordion-opened .accordion-toggle:after {
+            content: "\f054";
+        }
+
+        .accordion-h1 {
+            display: inline;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body data-offset="50" data-spy="scroll" data-target=".sidebar">
+    <div id="wrap">
+        <header class="subhead" id="topheader">
+            <div class="container">
+                <h1>The R User Conference 2016</h1>
+
+                <p class="lead">
+                    June 27 - June 30 2016<br>
+                    Stanford University, Stanford, California
+                </p>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="span3 sidebar">
+                    <div id="logodiv">
+                        <img alt="logo" src="../images/user2016/user2016-569x300.png"><br>
+                        <br>
+                        <a href="https://twitter.com/user_stanford" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="true">Follow @user_stanford</a>
+                        <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+                        <br><br>
+                    </div>
+
+                    <div class="well" style="text-align: center;">
+                        <a href="index.html"><button type="button" class="btn btn-large btn-info">Tutorial Index</button></a><br /><br />
+                        <a href="../index.html"><button type="button" class="btn btn-large btn-success">Return to Main Page</button></a>
+                    </div>
+                </div>
+
+                <div class="span9 content">
+                    <div style="width: 20%; float: left;"><a href="02.html">&larr; Previous Tutorial</a></div>
+                    <div style="width: 60%; float: left; display: block; text-align: center; font-style: italic;"><a href="index.html"><u>useR! 2016 Tutorials</u></a></div>
+                    <div style="width: 20%; float: right;"><a href="04.html">Next Tutorial &rarr;</a></div>
+                    <br /><br />
+                    <div class="well">
+                        <h1>Missing Value Imputation with R</h1>
+                        <h5 style="font-style: italic;">Julie Josse and François Husson, INRIA - Agrocampus Ouest</h5>
+                    </div>
+                    
+                    <h3>Tutorial Description</h3>
+                    <p>
+                        The ability to easily collect and gather a large amount of data from different sources can be seen as an opportunity to better understand many processes. It has already led to breakthroughs in several application areas. However, due to the wide heterogeneity of measurements and objectives, these large databases often exhibit an extraordinary high number of missing values. Hence, in addition to scientific questions, such data also present some important methodological and technical challenges for data analyst.<br /><br />
+
+                        The aim of this tutorial is to present an overview of the missing values literature as well as the recent improvements that caught the attention of the community due to their ability to handle large matrices with large amount of missing entries.<br /><br />
+
+                        We will touch upon the topics of single imputation with a focus on matrix completion methods based on iterative regularized SVD, notions of confidence intervals by giving the fundamentals of multiple imputation strategies, as well as issues of visualization with incomplete data. The approaches will be illustrated with real data with continuous, binary and categorical variables using some of the main R packages Amelia, mice, missForest, missMDA, norm, softimpute, VIM.<br /><br />
+                    </p>
+
+                    <h3>Goals</h3>
+                    <ol>
+                        <li>Understand the challenges posed by missing values and the consequences of missing data on the validity of subsequent analyses</li>
+                        <li>Have a snapshot of the missing values literature</li>
+                        <li>Know how to use matrix completion methods</li>
+                        <li>Be familiar with methods available to assess the credibility of the results obtained from incomplete data</li>
+                        <li>Be able to explore and visualize heterogeneous data with missing values</li>
+                    </ol>
+
+                    <h3>Tutorial Outline</h3>
+                    <ol>
+                        <li>Concise introduction to the missing values theory (aims: imputation or estimation of the parameters? - missing values mechanism - EM algorithm).</li>
+                        <li>Introduce single imputation with a focus on matrix completion methods based on iterative SVD such as nuclear-norm-regularized matrix approximation (Hastie, T., Mazumder, R., Lee J., Zadeh, R. 2014). Compare and contrast this with imputation based on random forests (Stekhoven, D.J. & Buhlmann, P., 2011).</li>
+                        <li>Presentation of classical multiple imputation methods for statistical analysis with missing data. It includes methods using an explicit joint distribution for the data and methods using conditional modeling (multivariate imputation by chained equations - MICE). Introduction to recent proposals based on principal components methods. These methods enable us to handle large data due to their dimensionality reduction property.</li>
+                        <li>Introduction of strategies available to handle missing values with heterogeneous data (mixed of binaries, categorical, continuous data).</li>
+                        <li>Exploration and visualization of incomplete data with principal component analysis and multiple correspondence analysis. Visualization of the variability due to the missing values.</li>
+                    </ol>
+                    <p>Through computer practicals using several R packages, participants will learn how to apply the statistical methods introduced in the course to realistic datasets from different fields (biomedical, social science, etc.)</p>
+
+                    <h3>Background Knowledge</h3>
+                    <p>
+                        Elementary knowledge of general statistical concepts and (linear) statistical models is assumed Basic knowledge in singular-values decomposition and principal component analysis could be useful.
+                    </p>
+
+                    <br />
+
+                    <div style="text-align: center;"><a href="#top" style="text-align: center;">Back to Top &uarr;</a></div>
+
+                    <br />
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../jquery/jquery-1.10.1.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../user.js"></script>
+    <script>
+        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");
+    </script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-67368813-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</body>
+</html>
