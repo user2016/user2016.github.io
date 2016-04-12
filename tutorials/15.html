@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta content="http://user2016.github.io/images/useR-middle.png">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="UTF-8">
+
+    <title>useR! 2016 Stanford, CA</title>
+    <!-- for social media preview stuff -->
+    <link href="images/useR-large.png" rel="image_src">
+    <meta content="The annual useR! international R User conference is the main meeting of the R user and developer community. In 2016, the conference will be held at the campus of Stanford University, Stanford, CA."
+          name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link href="../bootstrap/css/bootstrap.min.css" media="screen" rel="stylesheet">
+    <link href="../bootstrap/css/bootstrap-responsive.min.css" media="screen" rel="stylesheet">
+    <link href="../user.css" media="screen" rel="stylesheet">
+    <!-- code to make the TalkTable sortable using http://tablesorter.com/docs/ -->
+    <!-- <script type="text/javascript" src="tablesorter/jquery-latest.js"></script> -->
+    <!-- <script type="text/javascript" src="tablesorter/jquery.tablesorter.js"></script> -->
+    <!-- <script type="text/javascript"> -->
+    <!-- $(document).ready(function() -->
+    <!--     { -->
+    <!--         $("#TalkTable").tablesorter(); -->
+    <!--     } -->
+    <!-- ); -->
+    <!-- </script> -->
+    <style type="text/css">
+        @import url('http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
+
+        .accordion-toggle:after {
+            font-family: 'FontAwesome';
+            content: "\f078";
+            float: right;
+            position: relative;
+            margin-top: 1%;
+        }
+
+        .accordion-opened .accordion-toggle:after {
+            content: "\f054";
+        }
+
+        .accordion-h1 {
+            display: inline;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body data-offset="50" data-spy="scroll" data-target=".sidebar">
+    <div id="wrap">
+        <header class="subhead" id="topheader">
+            <div class="container">
+                <h1>The R User Conference 2016</h1>
+
+                <p class="lead">
+                    June 27 - June 30 2016<br>
+                    Stanford University, Stanford, California
+                </p>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="span3 sidebar">
+                    <div id="logodiv">
+                        <img alt="logo" src="../images/user2016/user2016-569x300.png"><br>
+                        <br>
+                        <a href="https://twitter.com/user_stanford" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="true">Follow @user_stanford</a>
+                        <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+                        <br><br>
+                    </div>
+
+                    <div class="well" style="text-align: center;">
+                        <a href="index.html"><button type="button" class="btn btn-large btn-info">Tutorial Index</button></a><br /><br />
+                        <a href="../index.html"><button type="button" class="btn btn-large btn-success">Return to Main Page</button></a>
+                    </div>
+                </div>
+
+                <div class="span9 content">
+                    <div style="width: 20%; float: left;"><a href="14.html">&larr; Previous Tutorial</a></div>
+                    <div style="width: 60%; float: left; display: block; text-align: center; font-style: italic;"><a href="index.html"><u>useR! 2016 Tutorials</u></a></div>
+                    <div style="width: 20%; float: right;"><a href="16.html">Next Tutorial &rarr;</a></div>
+                    <br /><br />
+                    <div class="well">
+                        <h1>An Introduction to Bayesian Inference using R Interfaces to Stan</h1>
+                        <h5 style="font-style: italic;">Ben Goodrich - Columbia University</h5>
+                    </div>
+
+                    <h3>Tutorial Description</h3>
+                    <p>
+                        The Stan project implements a probabalistic programming language, a library of mathematical and statistical
+                        functions, and a variety of algorithms to estimate statistical models in order to make Bayesian inferences
+                        from data. The three main sections of this tutorial will<br />
+                        <ol>
+                            <li>
+                                Provide an introduction to modern Bayesian inference using Hamiltonian Markov Chain Monte Carlo
+                                (MCMC) as implemented in Stan.
+                            </li>
+                            <li>
+                                Teach the process of Bayesian inference using the rstanarm R package, which comes with all the
+                                necessary functions to support a handful of applied regression models that can be called by passing a
+                                formula and data.frame as the first two arguments (just like for glm).
+                            </li>
+                            <li>
+                                Demonstrate the power of the Stan language, which allows users to write a text file defining their own
+                                posterior distributions. The stan function in the rstan R package parses this file into C++, which is
+                                then compiled and executed in order to sample from the posterior distribution via MCMC.
+                            </li>
+                        </ol>
+                    </p>
+
+                    <h3>Goals</h3>
+                    <ol>
+                        <li>
+                            Participants should come away from the tutorial with a good understanding of the basics of modern
+                            Bayesian inference
+                        </li>
+                        <li>
+                            To build the community of researchers who use Stan, whether through the models provided by the
+                            rstanarm package or by creating their own models to be handled by the rstan package
+                        </li>
+                        <li>
+                            To build the community of developers who may want to contribute to rstan or rstanarm or who may
+                            want to use Stan to estimate models in their own R packages
+                        </li>
+                    </ol>
+
+                    <h3>Tutorial Outline</h3>
+                        <p><i>Modern Bayesian Inference (55 minutes, followed by a 5 minute break)</i></p>
+                        <ul>
+                            <li>Brief review of probability (multiplication and addition rules)</li>
+                            <li>Bayes Theorem</li>
+                            <li>
+                                Hamiltonian Markov Chain Monte Carlo as the engine for Bayesian inference
+                                <ul>
+                                    <li>Troubleshooting common sampling problems</li>
+                                    <li>Effective Sample Size</li>
+                                </ul>
+                            </li>
+                            <li>Bayesian methods of model comparison</li>
+                        </ul>
+                        <p><i>Using the <strong>rstanarm</strong>, <strong>shinystan</strong>, and <strong>loo</strong> packages for Bayesian Inference (55 minutes, followed by a 5 minute break)</i></p>
+                        <ul>
+                            <li>
+                                Stan-based counterparts to core model-fitting functions in R
+                                <ul>
+                                    <li><code>stan_lm()</code></li>
+                                    <li><code>stan_glm()</code></li>
+                                    <li><code>stan_polr()</code></li>
+                                </ul>
+                            </li>
+                            <li>Visualizing and diagnosing results using the <strong>shinystan</strong> package</li>
+                            <li>Evaluating competing models estimated via Stan using the <strong>loo</strong> package</li>
+                            <li>
+                                Stan-based counterparts to <strong>lme4</strong>-style fitting functions in R to estimate hierarchical models
+                                <ul>
+                                    <li><code>stan_glmer()</code></li>
+                                    <li><code>stan_gamm4()</code></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p><i>Sampling from Arbitrary Posterior Distributions Defined in the Stan Language Using the <strong>rstan</strong> Package (60 minutes)</i></p>
+                        <ul>
+                            <li>Elements of the Stan language</li>
+                            <li>
+                                Blocks of a Stan program
+                                <ul>
+                                    <li>functions</li>
+                                    <li>data</li>
+                                    <li>transformed data</li>
+                                    <li>parameters</li>
+                                    <li>transformed parameters</li>
+                                    <li>model</li>
+                                    <li>generated quantities</li>
+                                </ul>
+                            </li>
+                            <li>Examples of defining simple and complicated posterior distributions in the Stan language</li>
+                            <li>Drawing from an arbitrary posterior distribution using the <code>stan()</code> function in the <strong>rstan</strong> package</li>
+                        </ul>
+
+
+                        <h3>Background Knowledge</h3>
+                        <p>Tutorial participants should have a good understanding of probability theory in order to utilize the various probability density functions and probability mass functions that are available in Stan. Participants should also be familiar with frequentist model-fitting functions in R such as <code>lm</code> and <code>glm</code>. Ideally, participants would also be familiar with functions that fit models with group-specific terms, such as <code>lmer</code> and <code>glmer</code> in the <strong>lme4</strong> package, but this is not absolutely required.</p>
+                        <p>It is not necessary to have any previous experience with Stan, although anyone who has previous experience with the BUGS family (WinBUGS, JAGS, OpenBUGS, etc.) is likely ready to learn Stan. We would ask that all tutorial participants read in advance these two sample chapters</p>
+                        <p><a href="http://xcelab.net/rmpubs/rethinking/Statistical_Rethinking_sample.pdf" class="uri">http://xcelab.net/rmpubs/rethinking/Statistical_Rethinking_sample.pdf</a></p>
+                        <p>from Richard McElreath’s 2016 book <em>Statistical Rethinking: A Bayesian Course with Examples in R and Stan</em>, which has been published by Chapman and Hall / CRC Press.</p>
+
+
+                        <h3>Installation of Software</h3>
+                        <p>Getting the <strong>rstan</strong> package to work is not as simple as it is for most R packages because Stan requires a C++ toolchain. A few days before the tutorial, please follow the instructions at</p>
+                        <p><a href="https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started" class="uri">https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started</a></p>
+                        <p>to install a C++ toolchain for your operating system and the <em>latest</em> version of the <strong>rstan</strong> package and its suggested R packages. At that point, installing the <em>latest</em> version of the <strong>rstanarm</strong> R package is straightforward via</p>
+<pre class="r"><code>install.packages(&quot;rstanarm&quot;)</code></pre>
+                        <p>which will also install the <strong>loo</strong> and <strong>shinystan</strong> R packages. Any questions about installation can be posted to</p>
+                        <p><a href="https://groups.google.com/forum/#!forum/stan-users" class="uri">https://groups.google.com/forum/#!forum/stan-users</a></p>
+                        <p>The tutorial will utilize the RStudio IDE, so we highly suggest installing its latest version along with the <strong>knitr</strong> and <strong>rmarkdown</strong> packages. Although we will not discuss them in detail, participants may also be interested in the <strong>rethinking</strong> package (which can be installed with <code>devtools::install_github(&quot;rmcelreath/rethinking&quot;)</code>) and / or the <strong>brms</strong> package (which can be installed with <code>install.packages(&quot;brms&quot;)</code>), which can generate a Stan program from R syntax and then draw from its posterior distribution.</p>
+
+
+                        <h3>Instructor Biography</h3>
+                        <p>
+                            Ben Goodrich is a core developer of the Stan project and a frequent contributor to both the Stan Users Google
+                            Group (660+ threads) and the Stan Developer Google Group (705+ threads). He is the maintainer of two
+                            Stan-related R packages that will be heavily used in this tutorial, a coauthor of a forthcoming article on Stan
+                            in the Journal of Statistical Software, and a Lecturer at Columbia University where he teaches graduate classes
+                            in quantitative methodology, including a masters-level course based on Stan entitled “Bayesian Statistics for
+                            the Social Sciences” (3 times). He is supported in part by a grant from the Sloan Foundation to build the
+                            Stan community and to ensure that the Stan project thrives over the long-term.
+                        </p>
+
+                        <br />
+
+                        <div style="text-align: center;"><a href="#top" style="text-align: center;">Back to Top &uarr;</a></div>
+
+                        <br />
+
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="../jquery/jquery-1.10.1.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../user.js"></script>
+    <script>
+        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");
+    </script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-67368813-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</body>
+</html>

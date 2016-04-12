@@ -1,0 +1,341 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta content="http://user2016.github.io/images/useR-middle.png">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="UTF-8">
+
+    <title>useR! 2016 Stanford, CA</title>
+    <!-- for social media preview stuff -->
+    <link href="images/useR-large.png" rel="image_src">
+    <meta content="The annual useR! international R User conference is the main meeting of the R user and developer community. In 2016, the conference will be held at the campus of Stanford University, Stanford, CA."
+          name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link href="../bootstrap/css/bootstrap.min.css" media="screen" rel="stylesheet">
+    <link href="../bootstrap/css/bootstrap-responsive.min.css" media="screen" rel="stylesheet">
+    <link href="../user.css" media="screen" rel="stylesheet">
+    <!-- code to make the TalkTable sortable using http://tablesorter.com/docs/ -->
+    <!-- <script type="text/javascript" src="tablesorter/jquery-latest.js"></script> -->
+    <!-- <script type="text/javascript" src="tablesorter/jquery.tablesorter.js"></script> -->
+    <!-- <script type="text/javascript"> -->
+    <!-- $(document).ready(function() -->
+    <!--     { -->
+    <!--         $("#TalkTable").tablesorter(); -->
+    <!--     } -->
+    <!-- ); -->
+    <!-- </script> -->
+    <style type="text/css">
+        @import url('http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
+
+        .accordion-toggle:after {
+            font-family: 'FontAwesome';
+            content: "\f078";
+            float: right;
+            position: relative;
+            margin-top: 1%;
+        }
+
+        .accordion-opened .accordion-toggle:after {
+            content: "\f054";
+        }
+
+        .accordion-h1 {
+            display: inline;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body data-offset="50" data-spy="scroll" data-target=".sidebar">
+    <div id="wrap">
+        <header class="subhead" id="topheader">
+            <div class="container">
+                <h1>The R User Conference 2016</h1>
+
+                <p class="lead">
+                    June 27 - June 30 2016<br>
+                    Stanford University, Stanford, California
+                </p>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="span3 sidebar">
+                    <div id="logodiv">
+                        <img alt="logo" src="../images/user2016/user2016-569x300.png"><br>
+                        <br>
+                        <a href="https://twitter.com/user_stanford" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="true">Follow @user_stanford</a>
+                        <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+                        <br><br>
+                    </div>
+
+                    <div class="well" style="text-align: center;">
+                        <a href="index.html"><button type="button" class="btn btn-large btn-info">Tutorial Index</button></a><br /><br />
+                        <a href="../index.html"><button type="button" class="btn btn-large btn-success">Return to Main Page</button></a>
+                    </div>
+                </div>
+
+                <div class="span9 content">
+                    <div style="width: 20%; float: left;"><a href="12.html">&larr; Previous Tutorial</a></div>
+                    <div style="width: 60%; float: left; display: block; text-align: center; font-style: italic;"><a href="index.html"><u>useR! 2016 Tutorials</u></a></div>
+                    <div style="width: 20%; float: right;"><a href="14.html">Next Tutorial &rarr;</a></div>
+                    <br /><br />
+                    <div class="well">
+                        <h1>Understanding and Creating Interactive Graphics</h1>
+                        <h5 style="font-style: italic;">Toby Dylan Hocking - McGill; Claus Thorn Ekstr&#248;m - Univ. Copenhagen</h5>
+                    </div>
+
+                    <h3>Tutorial Description</h3>
+                    <p>
+                        An interactive graphic invites the viewer to become an active partner in the analysis and allows for
+                        immediate feedback on how the data and results may change when inputs are modified. Interactive
+                        graphics can be extremely useful for exploratory data analysis, for teaching, and for reporting.
+                    </p>
+                    <p>
+                        Because there are so many different kinds of interactive graphics, there has been an explosion
+                        in R packages that can produce them (e.g. animint, shiny, rCharts, rMaps, ggvis, htmlwidgets).
+                        A beginner with little knowledge of interactive graphics can thus be easily confused by (1) understanding
+                        what kinds of graphics are useful for what kinds of data, and (2) finding an R package that
+                        can produce the desired type of graphic. This tutorial solves these two problems by (1) introducing
+                        a vocabulary of keywords for understanding the different kinds of graphics, and (2) explaining what
+                        R packages can be used for each kind of graphic.
+                    </p>
+                    <p>
+                        Attendees will gain hands-on experience with using R to create interactive graphics. We will discuss
+                        several example data sets and several R interactive graphics packages. Attendees will learn a
+                        vocabulary that helps to understand the strengths and weaknesses of the many different packages
+                        which are currently available.
+                    </p>
+
+                    <h3>Goals</h3>
+                    <ol>
+                        <li>
+                            Explain and emphasize the role that interactive graphics have in reporting, scientific journals,
+                            and in teaching.
+                        </li>
+                        <li>
+                            By showing several examples, explain different categories of graphics: animated, multi-panel,
+                            and multi-layer, interactive (direct vs indirect manipulation).
+                        </li>
+                        <li>
+                            Explain how existing R packages can be used to create these different types of graphics.
+                        </li>
+                        <li>
+                            Explain the strengths and weaknesses of the existing R packages, to highlight directions for
+                            future work.
+                        </li>
+                    </ol>
+
+                    <h3>Tutorial Outline</h3>
+                    <p><i>A vocabulary for understanding interactive graphics, 30 minutes</i></p>
+                    <p>
+                        In this section we will give a high-level introduction about interactive graphics, without going into
+                        details about R code for specific packages.
+                    </p>
+                    <p>Motivation: interactive graphics in exploratory data analysis, reporting results and teaching.</p>
+                    <p>Vocabulary for describing interactive graphics:</p>
+                    <br />
+                    <p>
+                        <b>interactive</b> user interaction changes what is displayed. Useful when there are many similar plots
+                        for different data subsets, but you don’t want to see them all at the same time.
+                    </p>
+                    <p>
+                        <b>direct manipulation</b> interacting with plot elements (lines, points, etc).
+                    </p>
+                    <p>
+                        <b>indirect manipulation</b> interacting with keyboard, mouse clicks on widgets (buttons, menus,
+                        etc).
+                    </p>
+                    <p>
+                        <b>animated</b> An animated graphic automatically advances over time, like a video. Animated graphics
+                        are most useful when data sets have a time dimension. The only interaction possible is moving
+                        forward and backward in time.
+                    </p>
+                    <p>
+                        <b>multi-layer</b> A multi-layer graphic uses several geometric elements to show several data sets and/or
+                        variables. Multi-layer plots are useful for showing relationships between data sets and/or
+                        variables.
+                    </p>
+                    <p>
+                        <b>multi-panel</b> A multi-panel graphic shows different things in different panels (sub-plots) which each
+                        have their own axes (perhaps different from each other). Useful when there are many similar
+                        plots for different data subsets, and you <b>do</b> want to see them at the same time. Also useful
+                        for showing different plots with aligned axes.
+                    </p>
+                    <p>Compare and contrast:</p>
+                    <p>
+                        <b>interactive vs animated</b> only interaction possible in an animated graphic is moving forward and
+                        backward in time (animated graphics are thus a subset of interactive graphics).
+                    </p>
+                    <p>
+                        <b>interactive vs multi-panel</b> both useful for many similar plots with different data subsets. Do
+                        you want to see all the subsets at the same time? (yes=multi-panel, no=interactive)
+                    </p>
+
+                    <br />
+
+                    <p><i>Quiz questions</i></p>
+                    <p>
+                        The previous section introduced a vocabulary for describing interactive graphics. In the following
+                        section, after showing a new graphic, we will ask the audience to take 1 minute to discuss with their
+                        neighbour about which vocabulary words can be used to describe that graphic.
+                    </p>
+
+                    <br />
+
+                    <p>
+                        <i>
+                            Creating interactive graphics using R packages
+                        </i>
+                    </p>
+
+                    <p>In this section we will show specific R code examples from the various packages.</p>
+
+                    <p>High-level interactive plotting packages, 30 minutes</p>
+
+                    <ul>
+                        <li>
+                            Simple approaches like rotating plots (rgl package) and simple user interaction (wallyplot
+                            from MESS package).
+                        </li>
+                        <li>
+                            Interactive bar plots (rCharts, several different JavaScript interfaces, interfacing with
+                            JavaScript libraries to change axes and legends)
+                        </li>
+                        <li>
+                            Interactive scatter plots showing happiness and tax rate (rCharts, and clickme packages,
+                            several different JavaScript interfaces, add dropdown effects and improve tooltips)
+                        </li>
+                        <li>interactive maps and choropleths (the rMaps packages)</li>
+                        <li>
+                            Discussion of frustrations that new users unfamiliar with JavaScript may encounter when
+                            interfacing with JavaScript libraries
+                        </li>
+                    </ul>
+
+                    <p>Interactive graphics with shiny and plotly, 30 minutes</p>
+
+                    <ul>
+                        <li>Teaching least squares estimation (shiny)</li>
+                        <li>Teaching power calculations (shiny)</li>
+                        <li>
+                            Reproducing some of the previous graphics on happiness and tax rate in plotly (ggplot2,
+                            and ggplotly, adding tooltips/hover effects, and dropdown)
+                        </li>
+                        <li>Graphics on prediction accuracy for Danish population predictions (plotly, adding sliders)</li>
+                    </ul>
+
+                    <p>Multi-layer graphics, ggplot2 package, 15 minutes</p>
+
+                    <ul>
+                        <li>A map that shows a circle for every city, and a line for borders of each country.</li>
+                        <li>
+                            A plot of a linear model that shows data as circles, a regression line, and model residuals
+                            as line segments.
+                        </li>
+                    </ul>
+
+                    <p>Multi-panel graphics, facets in ggplot2, 15 minutes useful in two different situations:</p>
+
+                    <ul>
+                        <li><b>Same plot for different data subsets</b> a linear model fit to each of several data subsets.</li>
+                        <li>
+                            <b>Different plots with aligned axes</b> World Bank data viz with one time series panel, and
+                            one scatterplot panel.
+                        </li>
+                    </ul>
+
+                    <p>Animated graphics, animation package, 15 minutes</p>
+
+                    <ul>
+                        <li>Gradient descent (time=iterations).</li>
+                        <li>Two-panel World Bank data viz (time=years).</li>
+                    </ul>
+
+                    <p>
+                        Interactive + animated + multi-panel + multi-layer, 45 minutes a few packages are able
+                        to produce complex graphics which can be described by several vocabulary words.
+                    </p>
+
+                    <ul>
+                        <li>
+                            <b>shiny + ggplot2</b> World Bank data viz, interacting with widgets changes selected year, countries,
+                            regions.
+                        </li>
+                        <li><b>shiny + ggvis</b> same kind of graphic with World Bank data.</li>
+                        <li><b>animint</b> World Bank data viz, direct manipulation changes selected year, countries, regions.</li>
+                    </ul>
+
+                    <h3>Background Knowledge</h3>
+                    <p>
+                        Since we plan to present state-of-the-art interactive graphics, people should know how to use R data
+                        structures (lists, data.frames) and the ggplot2 package.<br /><br />
+                        Even though many examples will be interactive web graphics, we will assume only knowledge of
+                        R, not HTML/JavaScript.<br /><br />
+                        There are two classes of potential attendees:
+                        <ul>
+                            <li>
+                                UseRs who are not very familiar with interactive graphics should benefit the most, since we
+                                will give a high-level overview of many different packages.
+                            </li>
+                            <li>
+                                DevelopeRs of interactive packages are encouraged to come, to discuss the current state-ofthe-
+                                art and future directions.
+                            </li>
+                        </ul>
+                    </p>
+                    <p>
+                        Attendees should run the following R code to install the packages which are required for our tutorial:
+                        <code>source("http://tdhock.github.io/interactive-tutorial/packages.R")</code>
+                    </p>
+
+                    <h3>Instructor Biography</h3>
+                    <p>
+                        Toby Dylan Hocking has designed and implemented several R graphics packages. He is the designer
+                        and primary maintainer of directlabels (Best Student Poster Prize at useR 2011) and animint
+                        (presented in an <a href="https://www.amstat.org/meetings/jsm/2015/onlineprogram/AbstractDetails.cfm?abstractid=314184%0A">invited session at Joint Statistical Meetings 2015</a>). He is also the original designer
+                        of the ggplot conversion feature of the plotly package.
+                    </p>
+                    <p>
+                        Claus Thorn Ekstr&#248;m is the creator and contributor to a number of R packages (MESS, Meth-
+                        Comp, SuperRanker) and is the author of "The R Primer" book. He has previously given (<a href="http://biostatistics.dk/presentations/DynGraph.html">
+                            tutorials
+                            on Dynamic graphics in R
+                        </a>) and the role of interactive graphics in teaching, and won the C. Oswald
+                        George prize for his article "Teaching ‘Instant Experience’ with Graphical Model Validation
+                        Techniques" in 2014.
+                    </p>
+
+                    <br />
+
+                    <div style="text-align: center;"><a href="#top" style="text-align: center;">Back to Top &uarr;</a></div>
+
+                    <br />
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../jquery/jquery-1.10.1.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../user.js"></script>
+    <script>
+        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");
+    </script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-67368813-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</body>
+</html>

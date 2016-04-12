@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta content="http://user2016.github.io/images/useR-middle.png">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="UTF-8">
+
+    <title>useR! 2016 Stanford, CA</title>
+    <!-- for social media preview stuff -->
+    <link href="images/useR-large.png" rel="image_src">
+    <meta content="The annual useR! international R User conference is the main meeting of the R user and developer community. In 2016, the conference will be held at the campus of Stanford University, Stanford, CA."
+          name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link href="../bootstrap/css/bootstrap.min.css" media="screen" rel="stylesheet">
+    <link href="../bootstrap/css/bootstrap-responsive.min.css" media="screen" rel="stylesheet">
+    <link href="../user.css" media="screen" rel="stylesheet">
+    <!-- code to make the TalkTable sortable using http://tablesorter.com/docs/ -->
+    <!-- <script type="text/javascript" src="tablesorter/jquery-latest.js"></script> -->
+    <!-- <script type="text/javascript" src="tablesorter/jquery.tablesorter.js"></script> -->
+    <!-- <script type="text/javascript"> -->
+    <!-- $(document).ready(function() -->
+    <!--     { -->
+    <!--         $("#TalkTable").tablesorter(); -->
+    <!--     } -->
+    <!-- ); -->
+    <!-- </script> -->
+    <style type="text/css">
+        @import url('http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
+
+        .accordion-toggle:after {
+            font-family: 'FontAwesome';
+            content: "\f078";
+            float: right;
+            position: relative;
+            margin-top: 1%;
+        }
+
+        .accordion-opened .accordion-toggle:after {
+            content: "\f054";
+        }
+
+        .accordion-h1 {
+            display: inline;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body data-offset="50" data-spy="scroll" data-target=".sidebar">
+    <div id="wrap">
+        <header class="subhead" id="topheader">
+            <div class="container">
+                <h1>The R User Conference 2016</h1>
+
+                <p class="lead">
+                    June 27 - June 30 2016<br>
+                    Stanford University, Stanford, California
+                </p>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="span3 sidebar">
+                    <div id="logodiv">
+                        <img alt="logo" src="../images/user2016/user2016-569x300.png"><br>
+                        <br>
+                        <a href="https://twitter.com/user_stanford" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="true">Follow @user_stanford</a>
+                        <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+                        <br><br>
+                    </div>
+
+                    <div class="well" style="text-align: center;">
+                        <a href="index.html"><button type="button" class="btn btn-large btn-info">Tutorial Index</button></a><br /><br />
+                        <a href="../index.html"><button type="button" class="btn btn-large btn-success">Return to Main Page</button></a>
+                    </div>
+                </div>
+
+                <div class="span9 content">
+                    <div style="width: 20%; float: left;"><a href="13.html">&larr; Previous Tutorial</a></div>
+                    <div style="width: 60%; float: left; display: block; text-align: center; font-style: italic;"><a href="index.html"><u>useR! 2016 Tutorials</u></a></div>
+                    <div style="width: 20%; float: right;"><a href="15.html">Next Tutorial &rarr;</a></div>
+                    <br /><br />
+                    <div class="well">
+                        <h1>Genome-Wide Association Analysis and Post-Analytic Interrogation with R</h1>
+                        <h5 style="font-style: italic;">Andrea S. Foulkes - Mount Holyoke College</h5>
+                    </div>
+
+                    <h3>Tutorial Description</h3>
+                    <p>
+                        For complex traits, such as cardiometabolic disease, we increasingly recognize that the intergeneric space
+                        between protein coding genes (PCGs) contains highly ordered regulatory elements that control expression and
+                        function of PCGs and in themselves can be actively transcribed molecules. Indeed, over 50% of genome-wide
+                        association studies (GWAS) of complex traits identify single nucleotide polymorphisms (SNPs) that fall
+                        in intergenic regions and it is only recently becoming apparent that these regions are highly organized to
+                        perform specific functions. A next step in advancing precision medicine is careful and rigorous interrogation
+                        of the role of these regulatory elements, and their interplay with known PCGs and environmental factors,
+                        in the heritability of complex disease phenotypes. This tutorial focuses on analytic techniques and R tools
+                        designed to uncover these complex, and largely uncharacterized relationships.
+                    </p>
+
+                    <h3>Goals</h3>
+                    Upon completion of this tutorial, students will:
+                    <ol>
+                        <li>
+                            Understand the core analytic components of a standard GWAS and be familiar with code to complete
+                            a “start-to-finish” GWAS analysis using R; and
+                        </li>
+                        <li>
+                            Understand and be able to apply approaches for more comprehensive interrogation of regional and
+                            higher-order associations to discern the relative contributions of gene and regulatory elements.
+                        </li>
+                    </ol>
+
+                    <h3>Tutorial Outline</h3>
+                    <i>All methods and examples will be presented and made available using R/Jupyter notebooks.</i>
+                    <ol>
+                        <li>
+                            Part 1: Core analytic components of a standard GWAS.
+                            <ol type="a">
+                                <li>Data preprocessing – SNP and sample level filtering;</li>
+                                <li>
+                                    Data generation – principal components for population substructure and SNP imputation using
+                                    1000 genomes data;
+                                </li>
+                                <li>Association analysis – for typed and imputed SNPs using parallel processing; and</li>
+                                <li>
+                                    Post-analytic visualization and interrogation using external resources, including those available
+                                    through the UCSC genome browser.
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            Part 2: Interrogation of regional and higher-order associations.
+                            <ol type="a">
+                                <li>
+                                    General overview of class-level testing strategies, rare-variant analysis, gene-environment interaction
+                                    analysis, and gene-set enrichment and biological pathway analysis. Specific methods covered will
+                                    include: GATES, VEGAS, QT, GSEA, SKAT and MAGENTA.
+                                <li>
+                                    Translation of methods to alternative genomic taxonomies, including regulatory elements such as
+                                    long intergenic non-coding RNAs, enhancer elements and splicing regions.
+                                </li>
+                                <li>
+                                    Correcting for multiple comparisons and controlling family wise error rate.
+                                </li>
+                                <li>
+                                    Computational efficiencies and versatility of each method with respect to alternative genomic
+                                    taxonomies.
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+
+                    <h3>Background Knowledge</h3>
+                    <p>
+                        Participants are expected to be familiar with basic statistical concepts and techniques at a level of an
+                        intermediate course in statistics.
+                    </p>
+
+                    <h3>Instructor Biography</h3>
+                    <p>
+                        Dr. Foulkes is a Professor of Statistics at Mount Holyoke College. She received her ScD in Biostatistics from
+                        Harvard School of Public Health in 2000, and has since made substantial contributions in the field of statistical
+                        genetics, including methodological and substantive research articles (over 50 publications) as well as open source
+                        educational materials (<a href="http://www.stat-gen.org/">http://www.stat-gen.org/</a> and <a href="http://www.statsteachr.org/">http://www.statsteachr.org/</a>). She has led tutorials at
+                        the UseR! Conferences in Dortmund, Rennes and Warwick based on her widely acclaimed graduate level
+                        textbook, Applied Statistical Genetics with R (2009), Springer, New York (<a href="http://www.springer.com/us/book/9780387895536">http://www.springer.com/us/book/9780387895536</a>). Content of the proposed tutorial draws on a second edition of this book, currently underway,
+                        and Dr. Foulkes’ recent tutorial, A guide to genome-wide association analysis and post-analytic interrogation
+                        (2015), Statistics in Medicine, 34:3769–3792 (<a href="http://onlinelibrary.wiley.com/doi/10.1002/sim.6605/full">http://onlinelibrary.wiley.com/doi/10.1002/sim.6605/full</a>).
+                    </p>
+
+                    <br />
+
+                    <div style="text-align: center;"><a href="#top" style="text-align: center;">Back to Top &uarr;</a></div>
+
+                    <br />
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../jquery/jquery-1.10.1.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../user.js"></script>
+    <script>
+        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");
+    </script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-67368813-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta content="http://user2016.github.io/images/useR-middle.png">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="UTF-8">
+
+    <title>useR! 2016 Stanford, CA</title>
+    <!-- for social media preview stuff -->
+    <link href="images/useR-large.png" rel="image_src">
+    <meta content="The annual useR! international R User conference is the main meeting of the R user and developer community. In 2016, the conference will be held at the campus of Stanford University, Stanford, CA."
+          name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link href="../bootstrap/css/bootstrap.min.css" media="screen" rel="stylesheet">
+    <link href="../bootstrap/css/bootstrap-responsive.min.css" media="screen" rel="stylesheet">
+    <link href="../user.css" media="screen" rel="stylesheet">
+    <!-- code to make the TalkTable sortable using http://tablesorter.com/docs/ -->
+    <!-- <script type="text/javascript" src="tablesorter/jquery-latest.js"></script> -->
+    <!-- <script type="text/javascript" src="tablesorter/jquery.tablesorter.js"></script> -->
+    <!-- <script type="text/javascript"> -->
+    <!-- $(document).ready(function() -->
+    <!--     { -->
+    <!--         $("#TalkTable").tablesorter(); -->
+    <!--     } -->
+    <!-- ); -->
+    <!-- </script> -->
+    <style type="text/css">
+        @import url('http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
+
+        .accordion-toggle:after {
+            font-family: 'FontAwesome';
+            content: "\f078";
+            float: right;
+            position: relative;
+            margin-top: 1%;
+        }
+
+        .accordion-opened .accordion-toggle:after {
+            content: "\f054";
+        }
+
+        .accordion-h1 {
+            display: inline;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body data-offset="50" data-spy="scroll" data-target=".sidebar">
+    <div id="wrap">
+        <header class="subhead" id="topheader">
+            <div class="container">
+                <h1>The R User Conference 2016</h1>
+
+                <p class="lead">
+                    June 27 - June 30 2016<br>
+                    Stanford University, Stanford, California
+                </p>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="span3 sidebar">
+                    <div id="logodiv">
+                        <img alt="logo" src="../images/user2016/user2016-569x300.png"><br>
+                        <br>
+                        <a href="https://twitter.com/user_stanford" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="true">Follow @user_stanford</a>
+                        <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+                        <br><br>
+                    </div>
+
+                    <div class="well" style="text-align: center;">
+                        <a href="index.html"><button type="button" class="btn btn-large btn-info">Tutorial Index</button></a><br /><br />
+                        <a href="../index.html"><button type="button" class="btn btn-large btn-success">Return to Main Page</button></a>
+                    </div>
+                </div>
+
+                <div class="span9 content">
+                    <div style="width: 20%; float: left;"><a href="09.html">&larr; Previous Tutorial</a></div>
+                    <div style="width: 60%; float: left; display: block; text-align: center; font-style: italic;"><a href="index.html"><u>useR! 2016 Tutorials</u></a></div>
+                    <div style="width: 20%; float: right;"><a href="11.html">Next Tutorial &rarr;</a></div>
+                    <br /><br />
+                    <div class="well">
+                        <h1>Machine Learning Algorithmic Deep Dive</h1>
+                        <h5 style="font-style: italic;">Erin LeDell - H2O.ai</h5>
+                    </div>
+
+                    <h3>Tutorial Description</h3>
+                    <p>
+                        The goal of this tutorial is to provide participants with a deep understanding of four widely used algorithms in
+                        machine learning: <a href="https://en.wikipedia.org/wiki/Generalized_linear_model">Generalized Linear Model (GLM)</a>, <a href="https://en.wikipedia.org/wiki/Gradient_boosting">Gradient Boosting Machine (GBM)</a>, <a href="https://en.wikipedia.org/wiki/Random_forest">Random Forest</a> and
+                        <a href="https://en.wikipedia.org/wiki/Feedforward_neural_network">Deep Neural Nets</a>. This includes a deep dive into the algorithms in the abstract sense, and a review of the
+                        implementations of these algorithms available within the R ecosystem.
+                    </p>
+                    <p>
+                        Due to their popularity, each of these algorithms have several implementations available in R. Each package
+                        author takes a unique approach to implementing the algorithm, and each package provides an overlapping, but
+                        not identical, set of model parameters available to the user. The tutorial will provide an in-depth analysis of how
+                        each of these algorithms were implemented in a handful of R packages for each algorithm.
+                    </p>
+                    <p>
+                        After completing this tutorial, participants will have a understanding of how each of these algorithms work, and
+                        knowledge of the available R implementations and how they differ. The participants will understand, for
+                        example, why the <a href="https://cran.r-project.org/web/packages/xgboost/">xgboost</a> package has, in less than a year, become one of the most popular GBM packages in
+                        R, even though the <a href="https://cran.r-project.org/web/packages/gbm/index.html">gbm</a> R package has been around for years and has been widely used -- what are the
+                        implementation tricks used in xgboost that are not (yet) used in the gbm package? Or, why do some
+                        practioners in certain domains prefer the one implementation over another? We will answer these questions
+                        and more!
+                    </p>
+
+                    <h3>Goals</h3>
+                    <ol>
+                        <li>
+                            Provide an in-depth and practical exploration into four of the most popular algorithms in machine learning:
+                            Generalized Linear Modeling (GLM), Gradient Boosting Machines (GBM), Random Forest and Deep
+                            Neural Nets.
+                        </li>
+                        <li>Learn about the most useful model parameters for each of these algorithms, and how to tune them.</li>
+                        <li>
+                            Examine several R packages for each algorithm to understand the difference in functionality across
+                            implementations.
+                        </li>
+                        <li>
+                            Become an expert at using these algorithms in R.
+                        </li>
+                    </ol>
+
+                    <h3>Tutorial Outline</h3>
+                    <p><i>Overview</i></p>
+                    <p>
+                        The "Machine Learning Algorithmic Deep Dive" tutorial will be a voyage into the depths of four of the most
+                        popular machine learning algorithms: Generalized Linear Model (GLM), Gradient Boosting Machine (GBM),
+                        Random Forest and Deep Neural Nets.
+                    </p>
+                    <p>
+                        The tutorial will be broken up into four main sections -- one section for each algorithm, in addition to a brief
+                        introduction and follow-up discussion. Each algorithm-specific section will provide a high-level overview of the
+                        algorithm for participants who may not have a familiarity with the algorithm. After an overview of how the
+                        algorithm works, we will focus on a subset of important model parameters and discuss in detail what each of
+                        these parameters is used for and what relationships exist between pairs or groups of model parameters. As an
+                        example of releated model parameters, when you increase the value of the mtry parameter in a Random
+                        Forest, that reduces the randomness in the forest, and therefore, you may want to re-introduce additional
+                        variance into the model by reducing the sample_rate parameter.
+                    </p>
+                    <p>
+                        The discussion around the different R packages is not intended to be a "benchmark" of different algorithm
+                        implementations, but rather a survey of different techniques that the authors have chosen to use in their
+                        implementations. We will evaluate the effects that the addition of new parameters or computational tricks have
+                        on the performance of the algorithms. We will highlight the ways in which you can take advantage of the unique
+                        features of each of the implementations.
+                    </p>
+                    <p>
+                        We will also spend some time talking about default values for model parameters and the thought process
+                        involved in determining default model parameters for a new algorithm implementation. When the default values
+                        of identical parameters differ between packages, we will attempt to explain why these different defaults were
+                        chosen in different cases.
+                    </p>
+                    <p>
+                        Although the tutorial will focus on the various R implementations, we will also make note of any algorithm
+                        functionality that exists only in non-R packages, such as Python's <a href="http://scikit-learn.org/stable/">scikit-learn</a> module.
+                    </p>
+                    <p><i>GLM</i></p>
+                    <p>
+                        Generalized Linear Models are one of the oldest and still one of the most popular algorithms in the field of
+                        statistics / machine learning. The GLM available in base R is a "standard" single-threaded, GLM
+                        implementation with no regularization. The lack of regularization is not ideal for high-dimensional datasets and
+                        also can lead to issues that arise from collinearity among the columns. However, there are several other GLM
+                        packages that offer regularization via Lasso, Ridge and Elastic Net penalties.
+                    </p>
+                    <p>
+                        Among the linear modeling packages, there are several different training techniques used; we will discuss
+                        where each of these packages overlap and where they differ. For example, many GLM implementations use
+                        the L-BFGS optimization algorithm to fit a model, where others use stochastic gradient descent or iterativelyreweighted
+                        least squares. We will explain why understanding a little bit about different solvers is very useful in
+                        practice and provide "rules of thumb" about when to use each of the optimization algorithm (e.g. sparse data,
+                        wide data, correlated features, etc).
+                    </p>
+                    <p><i>GBM</i></p>
+                    <p>
+                        The Gradient Boosting Machine is a very popular all-purpose algorithm. It consistently peforms better than
+                        many other machine learning algorithms across a wide variety of datasets, in part due to the flexibility induced
+                        by it's ability to optimize a user-defined loss function. GBMs allow the user to specify their own loss function,
+                        where as other algorithms have the loss function, or optimization problem, "hard-coded" into the algorithm.
+                        Some implementations make liberal use of this flexibility and provide a variety of pre-defined, useful loss
+                        functions, usually corresponding to different response distributions (e.g. Poisson, Gaussian). For this reason,
+                        certain industries or scientific domains with very specific use-cases and related loss functions, may prefer
+                        certain packages over others.
+                    </p>
+                    <p>
+                        Other variability among implementations comes from various row and column sampling options that allow the
+                        user more flexibility and finer control over the randomness in the algorithm. We will discuss why the addition of
+                        something as simple as an extra column-sampling parameter to a GBM can increase model performance. We
+                        will also discuss paralleization techniques used to create distributed implemenations of GBM, an iterative
+                        algorithm that, unlike Random Forest, is non-trivial to parallelize.
+                    </p>
+                    <p>
+                        Boosting methods are susceptible to overfitting (if trained for too many iterations), so early-stopping techniques
+                        are particularly useful in practice and will be discussed.
+                    </p>
+                    <p><i>Random Forest</i></p>
+                    <p>
+                        The Random Forest algorithm, along with the Gradient Boosting Machine, is one of the most popular and
+                        robust machine learning algorithms used in practice. The Random Forest algorithm is interesting because there
+                        are several variants of the original Random Forest algorithm, as well as unique implementations for each of
+                        those variants. There are also implementations that target very specific use-cases or data types. For example,
+                        the <a href="https://cran.r-project.org/web/packages/ranger/index.html">ranger</a> R package was designed specifically for high-dimensional datasets such as Genome-Wide
+                        Association Study (GWAS) data.
+                    </p>
+                    <p>
+                        Another interesting aspect to the Random Forest algorithm is that computational tricks, such as shortcuts
+                        among different sorting techniques, and massive parallelization across compute nodes, play a huge role in
+                        performance. Lastly, some counter-intuitive algorithmic techniques such as using random values rather than
+                        computing optimimal values for feature splits can lead to improvements in speed and accuracy, as in the
+                        Extremely Randomized Trees variant of Random Forest, implemented in the <a href="https://cran.r-project.org/web/packages/extraTrees/index.html">extraTrees</a> package.
+                    </p>
+                    <p><i>Deep Neural Nets</i></p>
+                    <p>
+                        The deep learning ecosystem in R is still quite young and there are not many implementations available. Much
+                        of the focus in software development in the deep learning community has occured within the C++ and Python
+                        communities, often making use of GPU hardware, rather than traditional CPUs. However, there are a handful of
+                        impementations available in R that will be discussed in this section.
+                    </p>
+                    <p>
+                        Much of the obscurity around deep neural nets comes from the fact that, compared to other machine learning
+                        algorithms, there are a large number of model parameters. Some practitioners may be overwhelmed with the
+                        number of knobs available, which can make it difficult to achieve good performance if you are not an deep
+                        learning expert -- it's hard to know where to start. As part of this section, we will review the most important
+                        model parameters available to the user and provide a fully-featured "How To" guide to successfully training
+                        deep neural nets in R.
+                    </p>
+
+                    <p><i>Discussion</i></p>
+
+                    <p>
+                        A brief follow-up discussion about the multi-algorithm machine learning interface packages, <a href="https://cran.r-project.org/web/packages/caret/index.html">caret</a> and <a href="https://cran.r-project.org/web/packages/mlr/index.html">mlr</a>, will
+                        follow the algorithm-specific talks. Although these packages don't provide their own, unique implementations of
+                        machine learning algorithms (they are wrappers for existing algorithm implementations), they offer a clean
+                        interface and some advanced features (e.g. cross-validation, bootstrapping, etc) that are worthy of mentioning
+                        as part of this tutorial.
+                    </p>
+
+                    <h3>Background Knowledge</h3>
+                    <p>
+                        Some familiarity with the main concepts of machine learning (regression, classification) and common machine
+                        learning algorithms would be helpful, but not required.
+                    </p>
+
+                    <h3>Instructor Biography</h3>
+                    <p>
+                        Erin is a Statistician and Machine Learning Scientist at <a href="http://www.h2o.ai/">H2O.ai</a>, where she works on open source machine
+                        learning software. She is the author of a handful of machine learning related <a href="http://www.stat.berkeley.edu/~ledell/software.html">R packages</a> and a contributor to
+                        the <a href="https://github.com/rOpenHealth">rOpenHealth</a> project. Erin received her Ph.D. in Biostatistics with a Designated Emphasis in Computational
+                        Science and Engineering from UC Berkeley. Her dissertation focused on scalable ensemble learning and was
+                        awareded the 2015 <a href="http://statistics.berkeley.edu/awards/student-departmental">Erich L Lehmann Citation</a> by the UC Berkeley Department of Statistics. As a result of
+                        working on multi-algorithm ensemble learning and software development in R, she has become familiar with
+                        many machine learning algorithms and their implementations.
+                    </p>
+                    <p>
+                        A list of past presentations is available on her <a href="http://www.stat.berkeley.edu/~ledell/research.html">website</a>. She has given dozens of talks and lead a number of
+                        workshops over the past decade on machine learning, R, Python, H2O and various topics from Statistics. This
+                        list includes talks in the "Machine Learning track" at the 2014 and 2015 useR! conferences. She is also the
+                        founder of the <a href="http://www.meetup.com/Bay-Area-Women-in-Machine-Learning-and-Data-Science/">Bay Area Women in Machine Learning & Data Science</a> meetup group which regularly organizes
+                        talks and hands-on coding workshops in the Bay Area.
+                    </p>
+                    <p>
+                        A few examples of recent tutorials:
+                        <ul>
+                            <li><a href="http://www.stat.berkeley.edu/~ledell/docs/dlab_ensembles.pdf">Intro to Practical Ensemble Learning</a> tutorial at the D-Lab at UC Berkeley.</li>
+                            <li>H2O World Training: <a href="http://learn.h2o.ai/content/tutorials/intro-to-datascience/index.html">Intro to Data Science</a>, <a href="http://learn.h2o.ai/content/tutorials/ensembles-stacking/index.html">Ensemble Learning</a></li>
+                            <li><a href="https://github.com/WiMLDS/deepdream-workshop">DeepDream Workshop</a> where participants used deep learning to generate <a href="https://photos.google.com/share/AF1QipPX0SCl7OzWilt9LnuQliattX4OUCj_8EP65_cTVnBmS1jnYgsGQAieQUc1VQWdgQ?key=aVBxWjhwSzg2RjJWLWRuVFBBZEN1d205bUdEMnhB">"DeepDream"</a> images.</li>
+                        </ul>
+                    </p>
+
+                    <br />
+
+                    <div style="text-align: center;"><a href="#top" style="text-align: center;">Back to Top &uarr;</a></div>
+
+                    <br />
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../jquery/jquery-1.10.1.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../user.js"></script>
+    <script>
+        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");
+    </script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-67368813-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</body>
+</html>
