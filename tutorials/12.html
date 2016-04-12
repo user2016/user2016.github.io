@@ -1,0 +1,280 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta content="http://user2016.github.io/images/useR-middle.png">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="UTF-8">
+
+    <title>useR! 2016 Stanford, CA</title>
+    <!-- for social media preview stuff -->
+    <link href="images/useR-large.png" rel="image_src">
+    <meta content="The annual useR! international R User conference is the main meeting of the R user and developer community. In 2016, the conference will be held at the campus of Stanford University, Stanford, CA."
+          name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link href="../bootstrap/css/bootstrap.min.css" media="screen" rel="stylesheet">
+    <link href="../bootstrap/css/bootstrap-responsive.min.css" media="screen" rel="stylesheet">
+    <link href="../user.css" media="screen" rel="stylesheet">
+    <!-- code to make the TalkTable sortable using http://tablesorter.com/docs/ -->
+    <!-- <script type="text/javascript" src="tablesorter/jquery-latest.js"></script> -->
+    <!-- <script type="text/javascript" src="tablesorter/jquery.tablesorter.js"></script> -->
+    <!-- <script type="text/javascript"> -->
+    <!-- $(document).ready(function() -->
+    <!--     { -->
+    <!--         $("#TalkTable").tablesorter(); -->
+    <!--     } -->
+    <!-- ); -->
+    <!-- </script> -->
+    <style type="text/css">
+        @import url('http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
+
+        .accordion-toggle:after {
+            font-family: 'FontAwesome';
+            content: "\f078";
+            float: right;
+            position: relative;
+            margin-top: 1%;
+        }
+
+        .accordion-opened .accordion-toggle:after {
+            content: "\f054";
+        }
+
+        .accordion-h1 {
+            display: inline;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body data-offset="50" data-spy="scroll" data-target=".sidebar">
+    <div id="wrap">
+        <header class="subhead" id="topheader">
+            <div class="container">
+                <h1>The R User Conference 2016</h1>
+
+                <p class="lead">
+                    June 27 - June 30 2016<br>
+                    Stanford University, Stanford, California
+                </p>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="span3 sidebar">
+                    <div id="logodiv">
+                        <img alt="logo" src="../images/user2016/user2016-569x300.png"><br>
+                        <br>
+                        <a href="https://twitter.com/user_stanford" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="true">Follow @user_stanford</a>
+                        <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+                        <br><br>
+                    </div>
+
+                    <div class="well" style="text-align: center;">
+                        <a href="index.html"><button type="button" class="btn btn-large btn-info">Tutorial Index</button></a><br /><br />
+                        <a href="../index.html"><button type="button" class="btn btn-large btn-success">Return to Main Page</button></a>
+                    </div>
+                </div>
+
+                <div class="span9 content">
+                    <div style="width: 20%; float: left;"><a href="11.html">&larr; Previous Tutorial</a></div>
+                    <div style="width: 60%; float: left; display: block; text-align: center; font-style: italic;"><a href="index.html"><u>useR! 2016 Tutorials</u></a></div>
+                    <div style="width: 20%; float: right;"><a href="13.html">Next Tutorial &rarr;</a></div>
+                    <br /><br />
+                    <div class="well">
+                        <h1>Using R with Jupyter Notebooks for Reproducible Research</h1>
+                        <h5 style="font-style: italic;">Andrie de Vries and Micheleen Harris - Microsoft</h5>
+                    </div>
+
+                    <h3>Tutorial Description</h3>
+                    <p>
+                        This tutorial introduces the Jupyter notebook project (previously called IPython
+                        notebooks). The tutorial will describe how Jupyter can be used for:
+                        <ul>
+                            <li>
+                                <b>interactive</b> coding and mark-up <b>sandbox</b>, sharing test code, notes (as
+                                markdown and comments) and results with colleagues, publishing snippets and
+                                useful findings
+                            </li>
+                            <li>
+                                <b>literate programming</b> with interactivity, similar to like SWeave and knitr, but
+                                with added interactivity
+                            </li>
+                            <li>
+                                Multi-language interoperability, e.g. notebooks that include R as well as Python
+                                code.
+                            </li>
+                            <li><b>developing training</b>, using Jupyter notebooks locally or in the cloud</li>
+                            <li>
+                                <b>delivery of training</b> with persistent content, using a multi-tenant Jupyter
+                                notebook system
+                            </li>
+                        </ul>
+                    </p>
+
+                    <h3>Goals</h3>
+                    <ol>
+                        <li>Attendees will become familiar with several popular options for installing a Jupyter system on their PC's and on the cloud</li>
+                        <li>Show how to use R with Python as well as performing common R tasks</li>
+                        <li>Get attendees comfortable with using Jupyter notebooks for teaching</li>
+                    </ol>
+
+                    <h3>Tutorial Outline</h3>
+                    <ol>
+                        <li>
+                            Introduction to Jupyter notebook structure
+                            <ol type="a">
+                                <li>Functions within a browser – locally, server, cloud options</li>
+                                <li>Good bye interpreter, hello kernel – what is a kernel?</li>
+                                <li>How much is R and how much is Python? – do I have to know python?</li>
+                                <li>Notebooks are just harmless JSON</li>
+                            </ol>
+                        </li>
+                        <li>
+                            Tips
+                            <ol type="a">
+                                <li>
+                                    Know when to download vs. save (beware of the temporary notebook!)
+                                <li>
+                                    GitHub to version control and to collaborate (they actually render notebook
+                                    files on github.com)…even classrooms “pulls” down notebooks from Github
+                                </li>
+                                <li>
+                                    Notebook files are pure JSON. You can process them if you like, however
+                                    you like. For example, I’ve written a notebook for a lecture and parsed out
+                                    the solutions to exercises into a separate notebook to give out later.
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            Tricks
+                            <ol type="a">
+                                <li>Resizing images in an R notebook</li>
+                            </ol>
+                        </li>
+                        <li>
+                            Scientific reporting in an R Jupyter notebook
+                            <ol type="a">
+                                <li>
+                                    Comparison to the knitr system (A knitr chunk is equivalent to a Jupyter
+                                    cell)
+                                </li>
+                                <li>
+                                    Some real-life examples, showing off embedding plots, e.g. using ggplot2.
+                                </li>
+                            </ol>
+                        </li>
+                        <li>Guidelines on setting up your own local Jupyter notebook system (+IRkernel)</li>
+                        <li>
+                            A multi-tenant Jupyter notebook system in the cloud will be used to host the entire
+                            tutorial
+                        </li>
+                    </ol>
+
+                    <h3>Background Knowledge</h3>
+                    <p>
+                        This tutorial requires no background knowledge of Jupyter.<br /><br />
+                        We will provide an online hosted Jupyter system, but for users who want to install their
+                        own system, we’ll provide detailed download and installation instructions.
+                    </p>
+
+                    <h3>Instructor Biography</h3>
+                    <p>
+                        Andrie de Vries and Micheleen Harris will jointly teach this tutorial.<br /><br />
+
+                        Andrie de Vries is a programme manager at Microsoft, responsible for
+                        the development of Microsoft R Open and connectivity between R, the
+                        Azure cloud and other Microsoft products, e.g. Excel.<br /><br />
+                        During UseR!2015, Andrie had a tutorial session on RHadoop, a very
+                        popular session with more than 100 people attending.<br /><br />
+                        Andrie is also a regular speaker at R and industry events, including:
+                        <ul>
+                            <li>UseR!2013: Using survival analysis for marketing attribution</li>
+                            <li>
+                                UseR!2015: The network structure of CRAN
+                            </li>
+                            <li>
+                                EARL London, 2014: Taking a mini CRAN into your organization (agenda)
+                            </li>
+                            <li>
+                                EARL London, 2015: Reproducible Data Analysis with Revolution R Open (agenda)
+                            </li>
+                            <li>
+                                Apache Big data conference, Budapest 2015: R as a language for big data analytics.
+                            </li>
+                            <li>
+                                JSM 2015: The network structure of CRAN
+                            </li>
+                        </ul>
+
+                        <br />
+
+                        Micheleen Harris is a Data Scientist at Microsoft where she shares her
+                        Python, R and Jupyter notebook experience internally as well as with
+                        clients and partners.<br /><br />
+                        Recently she delivered a course utilizing Microsoft Azure to provide
+                        extensive training to a large partner, setting up a Jupyter notebook
+                        server for this purpose.<br /><br />
+                        During her time as a software engineer at the Institute for Systems Biology, a non-profit
+                        academic research center, she regularly delivered presentations on her research within her
+                        group as well as company-wide.<br /><br />
+                        Her recent papers include:
+                        <ul>
+                            <li>
+                                Pan-transcriptomic analysis identifies coordinated and orthologous functional
+                                modules in the diatoms Thalassiosira pseudonana and Phaeodactylum tricornutum,
+                                Marine Genomics (Nov 2015)
+                            </li>
+                            <li>
+                                State of the human proteome in 2013 as viewed through PeptideAtlas: comparing
+                                the kidney, urine, and plasma proteomes for the biology- and disease-driven Human
+                                Proteome Project, Journal of Proteome Research (Jan 2014), a proteomics effort
+                                contributing to the Human Proteome Project.
+                            </li>
+                            <li>She has contributed to several other academic papers and efforts over the years.</li>
+                        </ul>
+                        Recently she developed a “Python for the Data Scientist” course. She is also interested in
+                        polygot notebooks, for example R and Python code together in the same notebook, sharing
+                        data.<br /><br />
+
+                        Micheleen won several awards for teaching excellence, including:
+                        <ul>
+                            <li>
+                                Faraday Fellowship for Teaching Excellence, University of Austin, 2003
+                            </li>
+                            <li>Welch Teaching Excellence Award, University of Austin, 2002</li>
+                        </ul>
+                    </p>
+
+                    <br />
+
+                    <div style="text-align: center;"><a href="#top" style="text-align: center;">Back to Top &uarr;</a></div>
+
+                    <br />
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../jquery/jquery-1.10.1.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../user.js"></script>
+    <script>
+        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");
+    </script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-67368813-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</body>
+</html>
