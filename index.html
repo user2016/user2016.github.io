@@ -1615,5 +1615,17 @@
         ga('send', 'pageview');
 
     </script>
+    <script type="text/javascript">
+        var hasLoaded = false;
+        $(window).bind('load', function () {
+            if (!hasLoaded && $(window).innerWidth() <= 480) {
+                hasLoaded = true;
+                $(".accordion-heading").removeClass('accordion-opened');
+                $(".accordion-toggle").removeClass('collapsed');
+                $(".accordion-body").removeClass('in');
+                $(".accordion-body").css("height", "0px");
+            }
+        });
+    </script>
 </body>
 </html>
