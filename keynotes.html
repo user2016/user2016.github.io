@@ -28,10 +28,9 @@
     <style type="text/css">
         @import url('http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
 
-        img.speaker {
-            position: absolute;
-            top: 10px;
-            right: 10px;
+        img.speaker1 {
+            width: 0;
+            visibility: hidden;
         }
 
         img.speaker2 {
@@ -40,6 +39,24 @@
             right: 0px;
             float: right;
         }
+
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            img.speaker1 {
+                width: 50% !important;
+                visibility: visible !important;
+                display: block;
+                margin:0 auto;
+                display: block;
+                max-width: 100%;
+                max-height: 100%;
+            }
+
+            img.speaker2 {
+                width: 0px !important;
+                visibility: hidden;
+            }
+        }
+
     </style>
 </head>
 
@@ -77,7 +94,8 @@
                     <a href="index.html">&larr; Return to main page</a>
                     <h1 style="text-align: center;"><i>useR! 2016 Keynote Talks</i></h1>
                     <br>
-                    <div class="well" style="position: relative;">
+                    <div class="well" style="position: relative; min-width: 100px;">
+                        <img src="http://user2016.org/images/invited_speakers/Richard_Becker.png" alt="Rick Becker" class="speaker1" />
                         <table style="width: 100%;">
                             <tr>
                                 <td>
@@ -107,7 +125,8 @@
                         </blockquote>
                     </div>
 
-                    <div class="well" style="position: relative;">
+                    <div class="well" style="position: relative; min-width: 100px;">
+                        <img class="speaker1" src="http://user2016.org/images/invited_speakers/knuth_news.jpg" alt="Donald Knuth" />
                         <table style="width: 100%;">
                             <tr>
                                 <td>
@@ -135,7 +154,8 @@
                         </blockquote>
                     </div>
 
-                    <div class="well" style="position: relative;">
+                    <div class="well" style="position: relative; min-width: 100px;">
+                        <img class="speaker1" src="images/invited_speakers/Deborah_Nolan_cropped.jpeg" alt="Deborah Nolan" />
                         <table style="width: 100%;">
                             <tr>
                                 <td>
@@ -173,7 +193,8 @@
                         </blockquote>
                     </div>
 
-                    <div class="well" style="position: relative;">
+                    <div class="well" style="position: relative; min-width: 100px;">
+                        <img class="speaker1" src="http://user2016.org/images/invited_speakers/Simon_Urbanek.jpeg" alt="Simon Urbanek" />
                         <table style="width: 100%;">
                             <tr>
                                 <td>
@@ -214,7 +235,8 @@
                         </blockquote>
                     </div>
 
-                    <div class="well" style="position: relative;">
+                    <div class="well" style="position: relative; min-width: 100px;">
+                        <img class="speaker1" src="http://user2016.org/images/invited_speakers/Hadley_Wickham.jpg" alt="Hadley Wickham" />
                         <table style="width: 100%;">
                             <tr>
                                 <td>
@@ -248,7 +270,8 @@
                         </blockquote>
                     </div>
 
-                    <div class="well" style="position: relative;">
+                    <div class="well" style="position: relative; min-width: 100px;">
+                        <img class="speaker1" src="http://user2016.org/images/invited_speakers/Daniela_Witten.jpeg" alt="Daniela Witten" />
                         <table style="width: 100%;">
                             <tr>
                                 <td>
