@@ -86,13 +86,40 @@
                 <br />
                 <div class="span9 content">
                     <div class="well">
-                        <h1>Marketing Analytics with Time to Event Data in R</h1>
+                        <h1>Time-to-Event Modeling as the Foundation of Multi-Channel Revenue Attribution</h1>
                         <h5 style="font-style: italic;">Tess Calvez - Neustar, Inc.</h5>
                     </div>
 
                     <h3>Tutorial Description</h3>
                     <p>
-                        Coming soon...
+                        In the realm of marketing analytics, time to event modeling at the customer level can provide a more granular view of the incremental impact that marketing campaigns have on individuals. Media that is addressable can be mapped to an individual, and even aggregated data can be mapped down to an individual via various techniques (i.e. geo, dma, etc.). To accurately assess the incremental effect of marketing, a primary task during modeling is not only to estimate the magnitude/amplitude of the marketing effect, but also to capture the differing decay rates that each specific one has.
+                    </p>
+                    <p>
+                        This tutorial will describe the basic techniques of applying time-to-event statistical modeling techniques to marketing analytics problems. Beginning with data preparation, sampling, outlier detection and techniques to control for non-marketing effects, the tutorial will move on to consider various modeling strategies and methods for evaluating model effectiveness. The techniques and processes presented will mimic a typical marketing analytics workflow. We will be using a random sample from a (anonymized) large retail firm.
+                    </p>
+
+                    <h3>Tutorial Outline</h3>
+                    <ul>
+                        <li>
+                            Motivation for modeling customer-level, time-expanded data
+                            <ul>
+                                <li>Performing basic exploratory data analysis with this type of data (i.e. controlling for non-marketing effects, variable transformations, outlier detection and treatment, etc.)</li>
+                            </ul>
+                        </li>
+                        <li>Learning the differing decay rates of marketing treatments</li>
+                        <li>
+                            Building simple logistic regression models with this data (geared more for description) 
+                            <ul>
+                                <li>Building models and subsets of models with different variable groupings</li>
+                                <li> Model Evaluation (Gains, ROC, Bootstrap)</li>
+                            </ul>
+                        </li>
+                        <li>Building decision trees with this data (geared more for prediction and potential interaction detection)</li>
+                    </ul>
+
+                    <h3>Prerequisites</h3>
+                    <p>
+                        Anyone who has an interest in analytics and has access to R is welcome! In case any packages are not installed, an up-to-date web browser, Chrome/Safari/Firefox might be helpful. Packages that we will be helpful to have installed beforehand: <code>multicore</code>, <code>parallel</code>, <code>reshape2</code>, <code>ggplot2</code>, <code>plyr</code>, <code>rpart</code>
                     </p>
 
                     <br />
